@@ -1,0 +1,51 @@
+$hoverUnderline: underline;
+@mixin displayContent($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.grid {
+  @include displayContent(grid, center, center);
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  padding: 2rem 0;
+  background-color: transparent;
+  .logo {
+    width: 100%;
+    height: 5rem;
+    animation: spin infinite 5s linear;
+  }
+  .type {
+    @include displayContent(flex, space-evenly, center);
+    width: 100%;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    div {
+      &:hover {
+        text-decoration: $hoverUnderline;
+        cursor: pointer;
+      }
+    }
+  }
+  .lang {
+    @include displayContent(flex, space-evenly, center);
+    width: 100%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
