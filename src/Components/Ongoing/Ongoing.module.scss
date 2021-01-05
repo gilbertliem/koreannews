@@ -1,0 +1,25 @@
+.container {
+  background-color: rgb(94, 84, 84);
+  display: flex;
+  justify-content: space-evenly;
+  color: whitesmoke;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0.5rem;
+  }
+  .line {
+    border: 1px solid whitesmoke;
+    margin: 0 1rem;
+  }
+  .seperation {
+    border: 1px solid black;
+    margin: 0 1rem;
+  }
+  .title {
+    text-transform: capitalize;
+  }
+}
