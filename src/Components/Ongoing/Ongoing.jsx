@@ -8,6 +8,7 @@ function Ongoing() {
     <>
       <div className={styles.container}>
         <div className={styles.row}>
+          <div className={styles.onair}>on air</div>
           <div>13.00</div>
           <div className={styles.line}></div>
           <div className={styles.title}>after school club</div>
