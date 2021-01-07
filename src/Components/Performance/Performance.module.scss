@@ -1,0 +1,42 @@
+.row {
+  padding: 2rem 0;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  .performance {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    .line {
+      border-radius: 25px;
+      height: 0.2rem;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+.card {
+  max-width: 20rem;
+  padding: 1rem;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+  .image {
+    width: 100%;
+    max-height: 20rem;
+  }
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+  }
+}
