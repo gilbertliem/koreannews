@@ -11,6 +11,7 @@ function Latest() {
         <div className={styles.latest}>
           <div className={styles.head}>latest news</div>
           <div className={styles.line}></div>
+          <div className={styles.line}></div>
         </div>
         <div className={styles.cont}>
           <div className={styles.card}>

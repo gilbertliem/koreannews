@@ -1,22 +1,23 @@
 .latest {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: capitalize;
-  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  align-items: center;
+  text-align: left;
+  padding: 2rem;
   .head {
     width: auto;
     background-color: #ffffff;
-    // border: 1px solid black;
-    // padding: 1rem;
-    // max-width: 40%;
   }
   .line {
-    // position: relative;
-    // top: -3rem;
-    // z-index: 1;
-    height: 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.26);
-    // background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 25px;
+    height: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.25);
   }
 }
 
